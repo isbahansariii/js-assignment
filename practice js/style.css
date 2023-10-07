@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8e540e;
+}
+.pointer{
+    display: inline-block;
+    cursor: pointer;
+}
+.lBorder{
+    border-left: 3px solid #EE9322;
+    animation: animate 1.3s ease-in-out 0s;
+}
+
+body{
+    display: flex;  
+    align-items: center; 
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: #d7dddd; 
+}
+
+body>u{
+    padding: 20px;
+    width: 40%;
+    overflow: hidden;
+}
+body>u>h1, body>u>h2{
+    text-decoration:underline;
+    font-weight: 600;
+    animation: animate 1.3s ease-in-out 0s;
+}
+body>u>h1:hover, body>u>h2:hover{
+    color: #EE9322;
+}
+
+body>div.buttonArea{
+    width: 40%;
+    overflow: hidden;
+}
+body>div>a.selfTest_button{
+    display: block;
+    padding: 20px;
+}
+
+a.selfTest_button>button{
+    animation: animate 1.3s ease-in-out 0s;
+    background-color: #EE9322;
+}
+
+a.selfTest_button>button:hover{
+    background-color: #8e540e;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
