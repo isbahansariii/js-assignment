@@ -1,63 +1,89 @@
-*{
+* {
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #8e540e;
+    margin: 0;
 }
-.pointer{
-    display: inline-block;
+
+.pointer {
     cursor: pointer;
 }
-.lBorder{
+
+.lBorder {
     border-left: 3px solid #EE9322;
     animation: animate 1.3s ease-in-out 0s;
 }
 
-body{
-    display: flex;  
-    align-items: center; 
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 100vh;
     width: 100vw;
-    justify-content: space-around;
-    background-color: #d7dddd; 
+    background-color: #d7dddd;
 }
 
-body>u{
+body>u {
     padding: 20px;
     width: 40%;
     overflow: hidden;
 }
-body>u>h1, body>u>h2{
-    text-decoration:underline;
+
+body>u>h1,
+body>u>h2 {
+    text-decoration: underline;
     font-weight: 600;
     animation: animate 1.3s ease-in-out 0s;
 }
-body>u>h1:hover, body>u>h2:hover{
+
+body>u>h1:hover,
+body>u>h2:hover {
     color: #EE9322;
 }
 
-body>div.buttonArea{
+body>div.buttonArea {
     width: 40%;
     overflow: hidden;
 }
-body>div>a.selfTest_button{
+
+body>div>a.selfTest_button {
     display: block;
     padding: 20px;
 }
 
-a.selfTest_button>button{
+a.selfTest_button>button {
     animation: animate 1.3s ease-in-out 0s;
     background-color: #EE9322;
 }
 
-a.selfTest_button>button:hover{
+a.selfTest_button>button:hover {
     background-color: #8e540e;
 }
 
 @keyframes animate {
-    0%{
-        transform: translateX(-40px);
+    0% {
+        transform: translateX(-50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        padding-left: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    body>u {
+        width: 100%;
+    }
+
+    body>div.buttonArea {
+        width: 100%;
     }
 }
