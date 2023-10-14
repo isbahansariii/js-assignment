@@ -11,7 +11,7 @@
 
 .lBorder {
     border-left: 3px solid #EE9322;
-    animation: animate 1.3s ease-in-out 0s;
+    animation: animate 1s ease-in-out 0s;
 }
 
 body {
@@ -33,7 +33,7 @@ body>u>h1,
 body>u>h2 {
     text-decoration: underline;
     font-weight: 600;
-    animation: animate 1.3s ease-in-out 0s;
+    animation: animate 1s ease-in-out 0s;
 }
 
 body>u>h1:hover,
@@ -52,7 +52,7 @@ body>div>a.selfTest_button {
 }
 
 a.selfTest_button>button {
-    animation: animate 1.3s ease-in-out 0s;
+    animation: animate 1s ease-in-out 0s;
     background-color: #EE9322;
 }
 
